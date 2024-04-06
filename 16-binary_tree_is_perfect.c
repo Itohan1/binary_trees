@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-#include <stdio.h>
 
 /**
  * binary_tree_height - checks the height of the tree
@@ -29,7 +28,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
  * raise_to_power - gets the power
  * @base: base
  * @power: power variable
- * return: result
+ * Return: result
  */
 
 int raise_to_power(int base, int power)
@@ -57,12 +56,12 @@ int raise_to_power(int base, int power)
 
 size_t binary_tree_size(const binary_tree_t *tree)
 {
-        if (tree == NULL)
-        {
-                return (0);
-        }
+	if (tree == NULL)
+	{
+		return (0);
+	}
 
-        return (1 + (binary_tree_size(tree->left) + binary_tree_size(tree->right)));
+	return (1 + (binary_tree_size(tree->left) + binary_tree_size(tree->right)));
 }
 
 /**
